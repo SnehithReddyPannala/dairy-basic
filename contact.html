@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{margin:0}
+    .navbar{display:flex;
+        flex-direction: row;
+    justify-content:space-between;
+background-color:#FFD700;}
+.nav-right{padding-right:20px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-left{padding-left: 20px;}
+.a-element{padding:10px;
+    border:solid;
+    border-color:ivory;
+    border-width: 2px;
+    margin:10px;
+    background-color:ivory;
+    border-radius:4px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color:black;
+}
+.contact{
+   text-align: center;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+}
+.mail{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.mailto{
+    margin-top: 15px;
+    margin-left: 3px;
+}
+a{color:black;
+}
+.phone{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8px;
+}
+.phoneno{
+    margin-left: 3px;
+}
+.address{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+a:hover{
+    color:#800020;
+}
+.box{display: flex;
+flex-direction: column;
+justify-content: center;
+width:200px;
+ margin-left: 540px;
+ border-style: solid;
+ border-width: 1 px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+ padding-left: 20px;
+ padding-right:85px;
+ margin-left: 480px;
+ margin-bottom: 100px;
+ border-color: #f3bb14;
+ background-color: #f3bb14;
+ border-radius: 9px;
+ box-shadow: 2px 4px 5px;
+ }
+ 
+
+ .names{;
+height:39px;
+width:250px;
+border-color:#b5651d;
+border-radius:4px;
+border-width: 1px;
+background-color:#f3bb14;
+margin:3px;
+opacity: 0.5;
+font-family:'Times New Roman', Times, serif;
+}
+input::placeholder{
+    color:#B5651d;
+    
+}
+.button:hover{
+    background-color:rgb(2, 71, 2);
+    border-color:rgb(2, 71, 2);
+}
+.names:focus{
+color:black;
+border-color: black;
+opacity: 1.0;
+font-size: 14px;
+}
+#namesfor{
+    height:90px;
+}
+.button{align-items: center;
+height:39px;
+width:150px;
+border-style: solid;
+border-color:rgb(3, 105, 3);
+background-color:rgb(3, 105, 3) ;
+border-width: 0.1;
+color:white;
+font-family:sans-serif;
+border-radius:20px;
+margin:5px;
+margin-left:58px;
+font-weight:bold}
+</style>
+<body>
+    <div class="navbar">
+        <div class="nav-left">
+            <img src="C:\Users\snehi\OneDrive\Pictures\WhatsApp Image 2024-06-29 at 16.07.52_5024ee69.jpg" height="100" width="100">
+        </div>
+        <div class="nav-right">
+            <a href="portfolio.html" class="a-element">Home</a>
+            <a class="a-element" onclick="window.location.reload()">Contact</a>
+        </div>
+    </div>  
+    <div>
+        <h1 class="contact">Contact Us</h1>
+        <div class="mail">
+        <p>Email Support :</p>
+        <a href="mailto:snehithreddypanala@gmail.com" class="mailto">snehithreddypannala@gmail.com</a>
+        </div>
+        <div>
+        <p class="phone">Phone No :
+        <a href="tel:95739652411" class="phoneno">9573965241</a></p>
+        </div>
+        <div>
+        <p class="address">Tejapur,Neradigonda,adilabad
+        Telangana 504323</p>
+        </div>
+    </div>
+    <div class="box">
+            <input type="text" placeholder="Name" class="names">
+            <input type="text" placeholder="Email" class="names">
+            <input type="tel" placeholder="Mobile Number" class="names">
+            <input type="text" placeholder="Order ID" class="names">
+            <input type="textbox" placeholder="Message" class="names" id="namesfor">
+            <input type="submit" value="Send message" class="button">
+    </div>
+</body>
+</html>
